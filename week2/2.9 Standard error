@@ -1,0 +1,50 @@
+## Standard error can set boundaries in our data, to ensure we are confident in our own results. 
+
+You might recall that in [the previous step](link), one woman managed 149 pushups in under two minutes. Considering that the mean was only 74.3, that's pretty extraordinaty.  In fact, using standard deviation, we can work out that there was less than 0.3% probability of that occuring in our sample. Probably enough to wonder if it's too good to be true.
+
+Standard error is used to help us feel more confident that are measurements are probably right.
+
+## Standard error
+
+Standard error is related to standard deviation, but it's not quite the same thing.  Typically, if we set standard error limits at 95%, that means we accept that the readings with a 95% probability of occuring based on normal distribution are accurate.  If our data really does fit with normal distribution, that means we can be 95% sure of our results.  In other words, there needs to be a greater than 5% chance of that measurement occuring for us to be confident that it's accurate.
+
+Standard deviation is what we use to figure out the boundaries that the 95% sets for us.  You might recall that in a normally distributed sample, 95% of measurements will fall within two standard deviations from the mean.
+
+## The calculations
+
+Thankfully calculating your standard error is fairly straightforward.
+
+Simply add 1.96 times the standand deviation to the mean to find your ceiling, and subtract the same to find your floor.  
+
+Or, to put it another way
+
+* Standard error upper limited = Mean + (1.96 x standard deviation)
+* SE lower limit = Mean - (1.96 x standard deviation)
+
+So, for our push-uppers we'd find our:
+
+* __upper limit__ at 122.7, or 74.3 + (1.96 x 24.7) 
+* __lower limit__  at 25.8, or 74.3 - (1.96 x 24.7) 
+
+There's a less than 5% chance of anyone doing less than 25 or more than 122 push-ups.
+
+
+One last thing to mention.  If you have been using ratio data [introduce ratios into types of data], you will need to calculate your confidence intervals a little bit differently.  You could use [this online calculator](https://www.graphpad.com/quickcalcs/ErrorProp1.cfm) - [add in section about decifering crazy notation], or otherwise consider speaking to an expert.
+
+
+## Standard error in practice
+
+Imagine you're our researcher who has measured the number of push-ups gym-goers can do in a two-minute period.  You notice that you've missed one of your measurements, which was hiding on its own on the other side of the page.  This one is for a massive 181 push-ups.
+
+That's 106 pushups above the mean, and 59 pushups over our 5% limit.  In practice, we'd exclude this measurement as an outlier.
+
+But just how unlikely is it?  Again, we can use standard deviation to figure that out.  The measurement is a whopping 4.3 standard deviations from the mean.  Because our data conforms to normal distribution, we know that the probability of this occuring is [<0.001%](http://www.bmj.com/sites/default/files/attachments/resources/2011/08/appendix-table.pdf).
+
+In the overwhelming majority of research, people stop calculating probabilities once they get below 0.001% - it's shorthand for extremely rare.
+
+## Your task
+
+Setting your standard error limits at 95% is commonplace in research.  
+
+However, sometimes unusual things do happen. Under what circumstances would you consider setting either tighter or narrower parametres?  
+Share your thoughts in the comments.
